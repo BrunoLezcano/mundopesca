@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    background-color: #219ebc;
+}
+header{
+    background-color: black;
+    height: 150px;
+    width: 100%;
+}
+
+.cabecera{
+    height: 100px;
+    width: 100%;
+    background-color: #e99f17;
+    align-items: center;
+    
+}
+.cabecera img{
+    height: 100px;
+    width: 100px;
+}
+.cabecera h1{
+    height: 100px;
+    width: 400px;
+    display: inline-block;
+    padding-left: 400px;
+    font-size: 60px;   
+}
+header nav{
+    color: aliceblue;
+}
+header nav ul{
+    height: 60px;
+    background-color: #023047;
+    line-height: 60px;
+}
+header nav ul li{
+    display: inline-block;
+    padding-left: 120px;
+    text-align: center;
+}
+.navegador{
+    text-decoration: none;
+    color: aliceblue;
+}
+.presentacion{
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 1px solid #e99f17;
+}
+.presentacion h2{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.nuestra-pesca{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.nuestra-pesca div{
+    display: inline-block;
+}
+.nuestra-pesca h3{
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+.nuestra-pesca img{
+    width: 670px;
+    height: 450px;
+    border-radius: 8px;
+}
+
+
+
+
+.respeto{
+    width: 100%;
+    height: 140px;
+}
+
+.respeto div{
+    width: 75%;
+    display: inline-block;
+}
+
+.respeto h4{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.respeto a{
+    width: 160px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #e99f17;
+    display: block; 
+    line-height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    display: inline-block;
+    margin-left: 100px;
+    position: relative;
+}
+
+
+
+.permisos{
+    width: 230px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #e99f17;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+.video-arg iframe{
+    width: 870px;
+    height: 500px;
+}
+
+.capturas{
+    display: inline-block;
+
+}
+.capturas h3{
+    font-size: 30px;
+    margin-top: 30px;
+}  
+.capturas img{
+    width: 670px;
+    height: 450px;
+    border-radius: 8px;
+}  
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #e99f17;
+    display: inline-block;
+    color:rgb(15, 17, 19);
+    font-size: 18px;
+}
+footer ul{
+    display: inline;
+    
+}
+footer ul li{
+    display: inline-block;
+    padding-left: 20px;
+    background-color: #e99f17;
+}
+footer h5{
+    display: inline;
+    padding-left: 650px;
+}
+.logo-redes{
+    height: 40px;
+    width: 40px;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+header{
+    background-color: black;
+    height: 160px;
+    width: 100%;
+    
+}
+.cabecera{
+    background-color: #e99f17;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;   
+}
+.cabecera img{
+    height: 100px;
+    width: 100px;
+}
+.cabecera h1{
+    width: 100%;
+    color: rgb(34, 29, 29);
+}
+nav ul{
+    background-color: #023047;
+    width: 100%;
+    height: 60px;    
+    align-items: center;
+    text-align: center;
+    display: inline-flex;      
+}
+nav ul li{
+    list-style: none;
+    padding-left: 140px;
+    color: black;    
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.presentacion{
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+}
+.presentacion h2{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+.nuestra-pesca{
+    width: 100%;
+    height: 500px;
+    display: inline-flex;
+}
+.nuestra-pesca h3{
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+.nuestra-pesca img{
+    width: 100%;
+    height: 450px;
+}
+
+.respeto{
+    width: 100%;
+    height: 120px;
+    display: inline-flex;
+}
+.respeto div{
+    display: inline-block;
+}
+
+.respeto h4{
+    width: 100%;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.respeto a{
+    width: 160px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #e99f17;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+*/
+
+
+
+
+
+

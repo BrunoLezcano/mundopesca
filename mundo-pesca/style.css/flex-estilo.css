@@ -59,49 +59,6 @@ header a {
 }
 
 
-/* FOOTER */
-
-footer {
-    height: 4rem;
-    background-color: #e99f17;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: flex-end;
-}
-
-footer ul li {
-    list-style: none;
-    padding-left: 1rem;
-}
-
-footerul ul li {
-    background-color: #e99f17;
-}
-
-footer h5 {
-    font-size: .7rem;
-    text-align: center;
-    line-height: 4rem;
-}
-
-.logo-redes {
-    height: 2.5rem;
-    width: 2.5rem;
-    padding-top: 1rem;
-    align-content: center;
-}
-
-
-/* FIN FOOTER */
-
-
 /* COMIENZO CSS INDEX */
 
 .presentacion {
@@ -214,8 +171,7 @@ footer h5 {
 
 .capturas {
     background-color: rgb(16, 131, 160);
-    display: flex;
-    flex-direction: column;
+    display: grid;
     margin-top: 1rem;
 }
 
@@ -227,34 +183,62 @@ footer h5 {
 }
 
 .capturas__img {
-    display: grid;
-    width: 95%;
-    grid-template-columns: 30% auto 40%;
-    gap: .2rem;
-    margin: .3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .capturas__img img {
-    width: 100%;
-    height: 100%;
-    border-radius: .2rem;
-    border: .1rem solid rgb(153, 126, 51);
-}
-
-.imagen1 {
-    grid-column: 1/4;
-}
-
-.imagen2 {
-    grid-column: 1/3;
-}
-
-.imagen4 {
-    grid-column: 1/4;
+    width: 49.5%;
+    border: 2px solid #023047;
+    border-radius: .3rem;
 }
 
 
 /* FIN CSS INDEX */
+
+
+/* FOOTER */
+
+footer {
+    height: 4rem;
+    background-color: #e99f17;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+footer ul li {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+footerul ul li {
+    background-color: #e99f17;
+}
+
+footer h5 {
+    font-size: .7rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.logo-redes {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding-top: 1rem;
+    align-content: center;
+}
+
+
+/* FOOTER */
 
 
 /* COMIENZO CSS QUIENES SOMOS */
@@ -296,7 +280,7 @@ footer h5 {
 }
 
 .vista img {
-    max-width: 32%;
+    max-width: 23rem;
     border: 2px solid #023047;
     border-radius: .3rem;
     margin-bottom: .5rem;
@@ -337,7 +321,10 @@ footer h5 {
 
 /* COMIENZO CSS EXCURSIONES */
 
+
+
 .locaciones {
+    height: 4rem;
     background-color: rgb(16, 131, 160);
 }
 
@@ -363,74 +350,39 @@ footer h5 {
 
 .galeria-locaciones h3 {
     font-size: 1.3rem;
-    padding-left: .8rem;
+    padding-left: .2rem;
 }
 
 .galeria-locaciones h4 {
     margin-bottom: 1rem;
-    padding-left: .8rem;
+    padding-left: .2rem;
     margin-top: .2rem;
 }
 
 .fotos-locaciones {
-    display: grid;
-    width: 90%;
-    grid-template-columns: 30% auto 40%;
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-    margin: .1rem auto;
-    background-color: #023047;
+    display: flex;
+    width: 100%;
+    max-height: 15.8rem;
+    flex-direction: row;
+    background-color: rgb(16, 131, 160);
+    justify-content: space-evenly;
 }
 
 .fotos-locaciones img {
-    width: 100%;
-    height: 100%;
-    border: .08rem solid rgb(153, 126, 51);
-    max-height: 25rem;
-}
-
-.goya1 {
-    grid-column: 1/3;
-}
-
-.goya3 {
-    grid-column-start: span 3;
-    max-height: 25rem;
-}
-
-.goya4 {
-    grid-column: 1/3;
-}
-
-.paso1 {
-    grid-column-start: span 2;
-}
-
-.paso3 {
-    grid-column: 1/3;
-}
-
-.paso6 {
-    grid-column: span 2;
-}
-
-.clemente1 {
-    grid-column: span 2;
-}
-
-.clemente4 {
-    grid-column: span 2;
+    max-width: 30.5%;
+    height: auto;
+    border: 2px solid #023047;
+    border-radius: .4rem;
 }
 
 .formulario h2 {
     font-size: 1.5rem;
-    padding-left: .3rem;
+    padding-left: .2rem;
     padding-bottom: .5rem;
 }
 
 .formulario__datos {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -446,12 +398,11 @@ footer h5 {
 }
 
 .selec-destino input {
-    margin-left: 1rem;
+    margin-left: .9rem;
 }
 
 .datos-personales {
     margin-right: 1rem;
-    margin-bottom: .5rem;
 }
 
 .datos-personales input {
@@ -566,8 +517,7 @@ footer h5 {
 .main-grid-contacto {
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: 'contacto' 'comentarios' 'pie';
-    grid-template-rows: 35vh 35vh auto;
+    grid-template-areas: 'contacto' 'comentarios';
 }
 
 .contacto {
@@ -577,7 +527,9 @@ footer h5 {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    height: 20rem;
     width: 100%;
+
 }
 
 .contacto div {
@@ -589,8 +541,7 @@ footer h5 {
 
 .contacto div h2 {
     text-align: center;
-    padding-bottom: 7%;
-
+    line-height: 10rem;
 }
 
 .contacto div h4 {
@@ -599,13 +550,6 @@ footer h5 {
 
 .comentarios {
     grid-area: comentarios;
-}
-.comentarios h2{
-    padding: .5rem 0;
-}
-
-footer {
-    grid-area: pie;
 }
 
 
@@ -662,6 +606,14 @@ footer {
 
 
 /* INICIO MEDIA QUERY INDEX*/
+
+@media screen and (max-width: 796px) {
+    .capturas__img img {
+        width: 98%;
+        border: 2px solid #023047;
+        border-radius: .3rem;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .presentacion {
@@ -789,12 +741,9 @@ footer {
     }
     .vista {
         padding-top: 1rem;
-        flex-direction: column;
-        align-items: center;
     }
     .vista img {
-        max-width: none;
-        width: 90%;
+        width: 12rem;
     }
     .ubicacion {
         flex-direction: column;
@@ -852,41 +801,8 @@ footer {
     }
 }
 
-
 /* FIN MEDIA QUERY TIENDA*/
 
+/* INICIO MEDIA QUERY TIENDA*/
 
-/* INICIO MEDIA QUERY EXCURSIONES*/
 
-@media screen and (max-width: 600px) {
-    .locaciones h2 {
-        font-size: .8rem;
-        padding-top: .3rem;
-    }
-    .locaciones li {
-        padding-left: .3rem;
-    }
-    .locaciones a {
-        font-size: .8rem;
-    }
-    .galeria-locaciones h3 {
-        font-size: 1rem;
-        padding-left: .3rem;
-    }
-    .galeria-locaciones h4 {
-        font-size: .7rem;
-        padding-left: .3rem;
-        margin-top: .4rem;
-    }
-    .formulario h3 {
-        font-size: 1rem;
-    }
-}
-
-/* INICIO MEDIA QUERY CONTACTO*/
-@media screen and (max-width: 600px) {
-    .comentarios h2{
-        font-size: 1.2rem;
-
-    }
-}

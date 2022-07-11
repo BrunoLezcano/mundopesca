@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    background-color: #219ebc;
+}
+header{
+    background-color: black;
+    height: 150px;
+    width: 100%;
+}
+
+.cabecera{
+    height: 100px;
+    width: 100%;
+    background-color: #e99f17;
+    align-items: center;
+    
+}
+.cabecera img{
+    height: 100px;
+    width: 100px;
+}
+.cabecera h1{
+    height: 100px;
+    width: 400px;
+    display: inline-block;
+    padding-left: 400px;
+    font-size: 60px;   
+}
+header nav{
+    color: aliceblue;
+}
+header nav ul{
+    height: 60px;
+    background-color: #023047;
+    line-height: 60px;
+}
+header nav ul li{
+    display: inline-block;
+    padding-left: 120px;
+    text-align: center;
+}
+.navegador{
+    text-decoration: none;
+    color: aliceblue;
+}
+h2{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.locaciones{
+    height: 30px;
+    width: 100%;
+}
+.locaciones ul li{
+    display: inline-block;
+    margin-left: 60px;
+    color: antiquewhite;
+    border-bottom: 1px solid antiquewhite;
+}
+.galeria-locaciones{
+    width: 100%;
+    height: 500px;
+    border-bottom: 1px solid #e99f17;
+}
+.galeria-locaciones h4{
+    margin-left: 8px;
+    margin-top: 3px;
+
+}
+.subtitulo{
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 8px;
+}
+.fotos-locaciones{
+    display: inline-block;
+}
+.fotos-locaciones img{
+    height: 400px;
+    width: 32%;
+    border: 1px solid #219ebc;
+    margin-left: 8px;
+    border-radius: 6px;
+}
+.formulario{
+    height: 200px;
+    width: 100%;
+}
+.formulario h2{
+    margin-left: 8px;
+
+}
+.formulario h3{
+    font-size: 20px;
+    margin-left: 8px;
+    padding-bottom: 8px;
+}
+.selec-destino input{
+    margin-left: 15px;
+    margin-bottom: 12px;
+    
+}
+.datos-personales{
+    margin-top: 20px;
+}
+.datos-personales input{
+    height: 25px;
+    width: 120px;
+    margin-left: 20px;
+    padding-left: 3px;
+    background-color: #e99f17;
+    color: rgb(0, 0, 0);
+}
+
+
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #e99f17;
+    display: inline-block;
+    color:rgb(15, 17, 19);
+    font-size: 18px;
+}
+footer ul{
+    display: inline;
+    
+}
+footer ul li{
+    display: inline-block;
+    padding-left: 20px;
+    background-color: #e99f17;
+}
+footer h5{
+    display: inline;
+    padding-left: 650px;
+}
+.logo-redes{
+    height: 40px;
+    width: 40px;
+    padding-top: 15px;
+}
