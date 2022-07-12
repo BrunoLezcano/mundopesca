@@ -29,7 +29,8 @@ header {
 
 .cabecera h1 {
     width: 100%;
-    background-color: #e99f17;
+    /*background-color: #e99f17;*/
+    background-image: linear-gradient(to top, #e99f17,#eaee1a );
     font-size: 4rem;
     text-align: center;
     text-align: 5rem;
@@ -130,16 +131,16 @@ footer h5 {
 .nuestra-pesca__salida {
     display: flex;
     flex-direction: column;
-    width: 48.5%;
+    width: 49%;
 }
 
 .nuestra-pesca__salida img {
     image-rendering: optimizeQuality;
     height: 100%;
-    border: 2px solid #023047;
+    border: .1rem solid #023047;
     border-radius: .3rem;
+    box-sizing: border-box;
 }
-
 .normas {
     display: flex;
     flex-direction: row;
@@ -174,6 +175,12 @@ footer h5 {
     min-width: 15rem;
     text-decoration: none;
     font-size: 1.1rem;
+    transition: all 2s;
+}
+.normas a:hover{
+    background-color: #dadd2b;
+    color: #050505;
+    transform: scale(1.1);
 }
 
 .permisos {
@@ -210,6 +217,12 @@ footer h5 {
     min-width: 7rem;
     font-size: 1.1rem;
     text-decoration: none;
+    transition: all 2s;
+}
+.permisos__solicitud a:hover{
+    background-color: #dadd2b;
+    color: #050505;
+    transform: scale(1.1);
 }
 
 .capturas {
@@ -234,11 +247,18 @@ footer h5 {
     margin: .3rem auto;
 }
 
+
 .capturas__img img {
     width: 100%;
     height: 100%;
     border-radius: .2rem;
     border: .1rem solid rgb(153, 126, 51);
+    transition: all 1.6s;
+}
+.capturas__img img:hover {
+    border: .5rem solid rgb(69, 186, 233);
+    box-sizing: border-box;
+    
 }
 
 .imagen1 {
