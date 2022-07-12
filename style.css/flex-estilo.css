@@ -37,6 +37,30 @@ header {
     letter-spacing: .3rem;
     font-family: 'Pirata One', cursive;
 }
+.tituloMarea h1 {
+    position: absolute;
+    width: calc(100% - 5rem);
+}
+
+.tituloA {
+    color: #1a0505;
+    text-shadow: -.1rem -1rem 0 white, .1rem -1rem 0 white, .1rem 1rem 0 white, -.1rem 1rem 0 white, ;
+}
+
+.tituloB {
+    color: #1bbad6;
+    animation: ola 3s ease-in-out infinite;
+}
+
+@keyframes ola {
+    0%,
+    100% {
+        clip-path: polygon( 0% 5%, 10% 40%, 33% 55%, 54% 55%, 70% 60%, 84% 55%, 100% 66%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon( 0% 33%, 10% 66%, 33% 68%, 54% 70%, 70% 60%, 84% 45%, 100% 50%, 100% 100%, 0% 100%);
+    }
+}
 
 header nav {
     height: 3rem;
@@ -64,7 +88,7 @@ header a {
 
 footer {
     height: 4rem;
-    background-color: #e99f17;
+    background-image: linear-gradient(to top, #e99f17,#eaee1a );
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -178,7 +202,7 @@ footer h5 {
     transition: all 2s;
 }
 .normas a:hover{
-    background-color: #dadd2b;
+    background-color: #eaee1a;
     color: #050505;
     transform: scale(1.1);
 }
@@ -253,10 +277,10 @@ footer h5 {
     height: 100%;
     border-radius: .2rem;
     border: .1rem solid rgb(153, 126, 51);
-    transition: all 1.6s;
+    transition: all 1.2s;
 }
 .capturas__img img:hover {
-    border: .5rem solid rgb(69, 186, 233);
+    border: .4rem solid rgb(245, 198, 46);
     box-sizing: border-box;
     
 }
@@ -379,6 +403,13 @@ footer h5 {
 
 .locaciones a {
     text-decoration: none;
+    transition: all .5s;
+    color: #eceaea;
+}
+.locaciones a:hover{
+    
+    color: #eebc18;
+    transform: scale(1.1);
 }
 
 .galeria-locaciones h3 {
@@ -521,7 +552,13 @@ footer h5 {
     text-align: center;
     list-style: none;
     line-height: 1.3rem;
+    transition: all 2s;
 }
+.equipo__lista li:hover{
+    color: #050505;
+    transform: scale(1.3);
+}
+
 
 .equipo__lista button {
     text-decoration: none;
@@ -644,6 +681,10 @@ footer {
     .cabecera h1 {
         font-size: 3rem;
         line-height: 3rem;
+    }
+    .tituloMarea h1 {
+        position: absolute;
+        width: calc(100% - 3rem);
     }
     header nav {
         height: 1.8rem;
