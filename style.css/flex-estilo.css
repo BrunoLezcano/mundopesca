@@ -3,33 +3,23 @@
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 main {
     background-color: #35879b;
 }
-
-
 /* CABECERA CON NAV*/
 
 header {
-    width: 100%;
-    height: 8rem;
-    background-color: #023047;
+    background-color: #35879b;
+    display: flex;
+    flex-direction: column;
 }
-
 .cabecera {
-    height: 5rem;
-    background-color: black;
     display: flex;
 }
-
 .cabecera img {
     height: 5rem;
 }
-
 .cabecera h1 {
-    width: 100%;
-    /*background-color: #e99f17;*/
     background-image: linear-gradient(to top, #e99f17,#eaee1a );
     font-size: 4rem;
     text-align: center;
@@ -37,21 +27,22 @@ header {
     letter-spacing: .3rem;
     font-family: 'Pirata One', cursive;
 }
+.navbar-expand-lg .navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+}
 .tituloMarea h1 {
     position: absolute;
     width: calc(100% - 5rem);
 }
-
 .tituloA {
     color: #1a0505;
     text-shadow: -.1rem -1rem 0 white, .1rem -1rem 0 white, .1rem 1rem 0 white, -.1rem 1rem 0 white, ;
 }
-
 .tituloB {
     color: #1bbad6;
     animation: ola 3s ease-in-out infinite;
 }
-
 @keyframes ola {
     0%,
     100% {
@@ -62,66 +53,42 @@ header {
     }
 }
 
-header nav {
-    height: 3rem;
-}
-
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-header nav li {
-    list-style: none;
-    line-height: 3rem;
-}
-
-header a {
-    color: rgb(216, 233, 221);
-    text-decoration: none;
-    border-bottom: #dfa63d 1px solid;
-}
-
-
 /* FOOTER */
-
 footer {
-    height: 4rem;
+    height: 10vh;
     background-image: linear-gradient(to top, #e99f17,#eaee1a );
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 footer ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-content: flex-end;
+    align-items: center;
+    justify-content: space-around   ;
+    height: 10vh;
 }
 
 footer ul li {
     list-style: none;
-    padding-left: 1rem;
+    margin-left: 25%;
+    
 }
 
-footerul ul li {
-    background-color: #e99f17;
+footer ul i{
+    font-size: 4vh;
+    color: #050505;
+    
 }
 
 footer h5 {
-    font-size: .7rem;
+    font-size: .8rem;
     text-align: center;
-    line-height: 4rem;
+    line-height: 10vh;
 }
 
-.logo-redes {
-    height: 2.5rem;
-    width: 2.5rem;
-    padding-top: 1rem;
-    align-content: center;
-}
 
 
 /* FIN FOOTER */
@@ -129,14 +96,11 @@ footer h5 {
 
 /* COMIENZO CSS INDEX */
 
-.presentacion {
-    height: 8rem;
-}
 
 .presentacion h2 {
-    font-size: 2rem;
-    padding-bottom: .8rem;
+    font-size: 1.7rem;
     padding-left: .2rem;
+    padding-bottom: .05rem;
 }
 
 .presentacion p {
@@ -144,27 +108,26 @@ footer h5 {
     padding-left: .2rem;
 }
 
-.nuestra-pesca {
-    color: rgb(216, 233, 221);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.row{
+    justify-content: space-around;
     background-color: rgb(16, 131, 160);
 }
 
 .nuestra-pesca__salida {
     display: flex;
     flex-direction: column;
-    width: 49%;
 }
-
+.nuestra-pesca__salida h3{
+    color: aliceblue;
+}
 .nuestra-pesca__salida img {
-    image-rendering: optimizeQuality;
-    height: 100%;
+    width: auto;
+    height: 18rem;
     border: .1rem solid #023047;
     border-radius: .3rem;
     box-sizing: border-box;
 }
+
 .normas {
     display: flex;
     flex-direction: row;
@@ -176,13 +139,11 @@ footer h5 {
 
 .normas h4 {
     font-size: 1.5rem;
-    padding-bottom: 1rem;
     padding-left: .2rem;
 }
 
 .normas p {
-    max-width: 70%;
-    padding-bottom: .4rem;
+    max-width: 90%;
     padding-left: .2rem;
 }
 
@@ -241,10 +202,10 @@ footer h5 {
     min-width: 7rem;
     font-size: 1.1rem;
     text-decoration: none;
-    transition: all 2s;
+    transition: all .7s;
 }
 .permisos__solicitud a:hover{
-    background-color: #dadd2b;
+    background-color: #cdda5c;
     color: #050505;
     transform: scale(1.1);
 }
@@ -259,8 +220,7 @@ footer h5 {
 .capturas h3 {
     font-size: 1.3rem;
     color: aliceblue;
-    padding: 1rem 0rem 1rem .2rem;
-    margin-top: 1rem;
+    padding: .5rem 0 0 .2rem;
 }
 
 .capturas__img {
@@ -270,54 +230,43 @@ footer h5 {
     gap: .2rem;
     margin: .3rem auto;
 }
-
-
 .capturas__img img {
     width: 100%;
     height: 100%;
     border-radius: .2rem;
     border: .1rem solid rgb(153, 126, 51);
-    transition: all 1.2s;
+    transition: all .8s;
 }
 .capturas__img img:hover {
     border: .4rem solid rgb(245, 198, 46);
     box-sizing: border-box;
-    
 }
-
 .imagen1 {
     grid-column: 1/4;
 }
-
 .imagen2 {
     grid-column: 1/3;
 }
-
 .imagen4 {
     grid-column: 1/4;
 }
-
-
 /* FIN CSS INDEX */
 
-
 /* COMIENZO CSS QUIENES SOMOS */
-
 .grid-quienes {
     width: 100%;
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: 'nosotros' 'vista' 'ubicacion';
 }
-
 .nosotros {
     grid-area: nosotros;
-    padding: .2rem 0rem 1rem .2rem;
+    padding: .2rem 0rem 0rem .2rem;
 }
 
 .nosotros h2 {
     font-size: 1.5rem;
-    padding: .6rem 0rem .2rem .2rem;
+    padding-left:.2rem;
 }
 
 .nosotros p {
@@ -511,26 +460,21 @@ footer h5 {
     border-radius: .3rem;
     border: .1rem solid #023047;
 }
-
-
 /* FIN CSS EXCURSIONES */
 
 
 /* COMIENZO CSS TIENDA */
-
 .main-grid-tienda {
     width: 100%;
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: 'equipo' 'secciones' 'cursos';
 }
-
 .equipo {
     grid-area: equipo;
     display: flex;
     flex-direction: column;
 }
-
 .equipo h2 {
     font-size: 1.3rem;
     padding: 1.2rem 0rem 1.2rem .2rem;
@@ -545,30 +489,25 @@ footer h5 {
 
 .equipo__lista li {
     width: 8rem;
-    height: 1.3rem;
+    height: 2rem;
     border: 2px solid #023047;
     border-radius: .4rem;
     background-color: #e99f17;
     text-align: center;
     list-style: none;
-    line-height: 1.3rem;
+    height: 2rem;
     transition: all 2s;
-}
-.equipo__lista li:hover{
-    color: #050505;
-    transform: scale(1.3);
-}
-
-
-.equipo__lista button {
-    text-decoration: none;
-    background-color: #e99f17;
-    border: none;
-}
-
+}   
 .equipo__lista a {
     text-decoration: none;
     font-size: 1rem;
+    align-content: center;
+    
+}
+.equipo__lista li:hover{
+    background-color: #d4d803;
+    transform: scale(1.3);
+    
 }
 
 .secciones {
@@ -577,43 +516,22 @@ footer h5 {
     flex-direction: column;
     padding: .8rem 0rem;
 }
-
-.secciones__producto {
-    background-color: rgb(16, 131, 160);
-    border-bottom: .3rem solid rgb(69, 124, 196);
-    display: grid;
+.secciones__producto{
+    border-top: 1px solid #050505;
+    padding-bottom: 1rem;
 }
-
-.secciones__producto h3 {
-    padding: .4rem .2rem;
-    font-family: 'Pirata One', cursive;
-    letter-spacing: .2rem;
-    font-size: 1.7rem;
-}
-
-.secciones__producto div {
+.tarjetas-reel{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-bottom: .2rem;
 }
-
-.secciones__producto img {
-    border: 2px solid #023047;
-    border-radius: .4rem;
-    width: 15rem;
+.card-img-top{
     height: 15rem;
-    border: 2px solid #023047;
-    border-radius: .5rem;
 }
-
 .cursos {
-    grid-area: cursos;
     background-color: rgb(16, 131, 160);
-    padding-bottom: .8rem;
-    padding-left: .2rem;
 }
-
 
 /* FIN CSS TIENDA */
 
@@ -637,20 +555,13 @@ footer h5 {
     width: 100%;
 }
 
-.contacto div {
-    color: #1a0505;
-    align-items: center;
-    color: #3a2d15;
-    margin: 0 auto;
-}
-
 .contacto div h2 {
     text-align: center;
-    padding-bottom: 7%;
+    padding-bottom: .5rem;
 
 }
 
-.contacto div h4 {
+.contacto div h5 {
     text-align: center;
 }
 
@@ -660,83 +571,85 @@ footer h5 {
 .comentarios h2{
     padding: .5rem 0;
 }
+.comentarios__form{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 footer {
     grid-area: pie;
 }
 
-
 /***** INICIO MEDIA QUERY HEADER Y FOOTER *****/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) { 
     header {
-        height: 5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        
     }
-    .cabecera {
-        height: 3rem;
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row; 
+    } 
+}
+@media screen and (max-width: 650px) {
+    .cabecera h1 {
+        text-align:start;  
     }
+}
+
+@media screen and (max-width: 500px) {
     .cabecera img {
         height: 3rem;
     }
     .cabecera h1 {
+        background-image: linear-gradient(to top, #e99f17,#eaee1a );
         font-size: 3rem;
-        line-height: 3rem;
+        text-align:start;  
     }
     .tituloMarea h1 {
         position: absolute;
         width: calc(100% - 3rem);
     }
-    header nav {
-        height: 1.8rem;
+    footer ul i{
+        font-size: 3.2vh;
     }
-    header nav li {
-        line-height: 1.8rem;
-    }
-    header a {
-        font-size: .7rem;
-    }
-    footer {
-        height: 3rem;
-    }
-    footer ul li {
-        list-style: none;
-        line-height: 3rem;
-        justify-content: center;
-    }
-    footer h5 {
-        font-size: .7rem;
-    }
-    .logo-redes {
-        height: 1.5rem;
-        width: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    footer h5 {
+    .copy{
         display: none;
     }
 }
-
+@media screen and (max-width: 400px) {    
+    .cabecera h1 {
+        font-size: 2rem; 
+    }
+}
 
 /***** FIN MEDIA QUERY HEADER Y FOOTER *****/
-
 
 /* INICIO MEDIA QUERY INDEX*/
 
 @media screen and (max-width: 768px) {
-    .presentacion {
-        height: 6rem;
-    }
+   
     .presentacion h2 {
         font-size: 1.5rem;
-        padding-bottom: .3rem;
+        padding-bottom: .2rem;
         padding-left: .2rem;
     }
     .presentacion p {
         font-size: .8rem;
         padding-left: .2rem;
     }
+    .nuestra-pesca__salida {
+        width: 94%;
+    }
+    .nuestra-pesca__salida h3{
+        font-size: 1.2rem;
+        padding-top: .5rem;
+    }
+    .nuestra-pesca__salida img {
+        height: auto;
+    }
+
     .normas {
         flex-direction: column;
         justify-content: center;
@@ -798,9 +711,7 @@ footer {
         flex-direction: column;
         padding-left: .3rem;
     }
-    .nuestra-pesca__salida {
-        width: 98.5%;
-    }
+    
     .normas {
         padding-top: 1rem;
     }
@@ -883,6 +794,23 @@ footer {
 /* INICIO MEDIA QUERY TIENDA*/
 
 @media screen and (max-width: 550px) {
+    .equipo__lista ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 10rem;
+    }
+
+    .equipo__lista li {
+        width: 8rem;
+        height: 2rem;
+        height: 2rem;
+        padding-bottom: 1rem;
+        transition: all 2s;
+    }   
+
+
+    /*
     .equipo h2 {
         font-size: 1.15rem;
     }
@@ -901,6 +829,7 @@ footer {
     .cursos p {
         font-size: .8rem;
     }
+    */
 }
 
 @media screen and (max-width: 320px) {
