@@ -52,42 +52,39 @@
     </header>
 
     <main class="main-grid-contacto">
-        <section class="contacto">
-            <div>
-                <h2>Contactanos</h2>
-                <h5>Almirante Brown 1724</h5>
-                <h5>Mar del Plata</h5>
-                <h5>MundoPesca.com</h5>
-                <h5>MundoPesca-atencion@yahoo.com</h5>
-                <h5>Telefono..... 0223 6557173</h5>
-            </div>
+        <section class="contacto">           
+            <h4>Contactanos</h4>
+            <h6>Almirante Brown 1724</h6>
+            <h6>Mar del Plata</h6>
+            <h6>MundoPesca.com</h6>
+            <h6>MundoPesca-atencion@yahoo.com</h6>
+            <h6>Telefono..... 0223 6557173</h6>
         </section>
         <section class="comentarios">
-            <h2>Dejanos tus comantarios</h2>
+            <h3>Dejanos tus comantarios</h3>
             <div class="comentarios__form">
                 <form>
-                    <div>
-                        <h4>
-                            <input type="text" placeholder="nombre" required>
-                        </h4>
-                        <h4>
-                            <input type="text" placeholder="apellido" required>
-                        </h4>
-                        <h4>
-                            <input type="tel" placeholder="telefono" required>
-                        </h4>
-                        <h4>
-                            <input type="email" placeholder="Email" required>
-                        </h4>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Nombre</span>
+                        <input type="text" class="form-control" aria-label="Nombre" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Apellido</span>
+                        <input type="text" class="form-control" aria-label="Apellido" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Telefono</span>
+                        <input type="text" class="form-control" aria-label="Telefono" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">Tu comentario</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                      <div class="input-group mb-3">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
                     </div>
                 </form>
-                <form>
-                    <textarea name="escriba su mensaje" placeholder="escriba su mensaje"></textarea required>                    
-                    <input type="submit" value="Enviar">
-                </form>
             </div>
-                
-            
         </section>
     </main>
 
