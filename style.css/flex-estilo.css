@@ -405,6 +405,7 @@ footer h5 {
 }
 .cursos {
     background-color: rgb(16, 131, 160);
+    padding-left: .3rem;
 }
 .btn-primary {
     color: #0c0c0c;
@@ -473,6 +474,9 @@ footer {
     .navbar-toggler{
         font-size: .8rem;
         line-height: initial;
+    }
+    .navbar-dark .navbar-toggler {
+        border-color: rgba(131, 64, 145, 0.1);
     }
     dl, ol, ul {
         margin-top: 0.6rem;
