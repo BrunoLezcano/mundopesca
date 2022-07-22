@@ -1,0 +1,162 @@
+/* header y nav*/
+header {
+    background-color: $color-body;
+    display: flex;
+    flex-direction: column;
+}
+.cabecera {
+    display: flex;
+}
+.logo{
+    display: flex;
+    box-sizing: border-box;
+    height: 4.9rem;
+}
+.cabecera h1 {
+    background-image: $color-headernav;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: .3rem;
+    font-family: 'Pirata One', cursive;
+}
+.navbar-expand-lg .navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+}
+.navbar .container-fluid{
+    justify-content: flex-end;
+}
+.tituloMarea{
+    height: 5rem;
+}
+.tituloMarea h1 {
+    position: absolute;
+    width: calc(100% - 4.9rem);
+}
+.tituloA {
+    color: #1a0505;
+    text-shadow: -.1rem -.1rem 0 $color-texto-llama, .1rem -.1rem 0 $color-texto-llama, .1rem .1rem 0 $color-texto-llama, -.1rem .1rem 0 $color-texto-llama, ;
+}
+.tituloB {
+    color: $color-agua-titu;
+    animation: ola 3s ease-in-out infinite;
+}
+@keyframes ola {
+    0%,
+    100% {
+        clip-path: polygon( 0% 48%, 10% 52%,20% 58%, 33% 55%, 54% 55%, 70% 60%, 84% 55%, 100% 66%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon( 0% 45%, 10% 55%,20% 53%, 33% 68%, 54% 70%, 70% 60%, 84% 45%, 100% 50%, 100% 100%, 0% 100%);
+    }
+}
+.footer {
+    height: 12vh;
+    background-image: $color-headernav;
+    display: flex;
+    justify-content:space-between;
+
+    &__copyright{
+        font-size: .8rem;
+        text-align: center;
+        line-height: 12vh;
+    }
+    &__iconos{
+        display: flex;
+        line-height: 12vh;
+    }
+    &__iconos__lista{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__iconos__lista__listado{
+        list-style: none;
+        margin-left: 25%;
+    }
+    &__iconos__lista__listado i{
+        font-size: 4vh;
+        color: #050505; 
+    }
+}
+
+/***** INICIO MEDIA QUERY HEADER Y FOOTER *****/
+@media screen and (max-width: 991px) { 
+    header {
+        flex-direction: row;
+        justify-content: space-between; 
+        height: auto;
+    }
+    .navbar{
+        align-items: flex-start;
+        padding-top: 1.7rem;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+        justify-content: flex-start;
+    } 
+    .navbar .container-fluid{
+        justify-content: flex-end;
+    }
+    .navbar-nav{
+        align-items: flex-end;
+    }
+    .navbar-toggler{
+        font-size: .8rem;
+        line-height: initial;
+    }
+    .navbar-dark .navbar-toggler {
+        border-color: rgba(131, 64, 145, 0.1);
+    }
+    dl, ol, ul {
+        margin-top: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .cabecera h1 {
+        text-align:start;  
+    }
+}
+@media screen and (max-width: 500px) {
+    .logo {
+        height: 3rem;
+    }
+    .cabecera h1 {
+        font-size: 2.5rem;
+        text-align:start; 
+        padding-left: .3rem; 
+    }
+    .tituloMarea h1 {
+        width: calc(100% - 3rem);
+    }
+    .navbar{
+        padding-top: .5rem;
+    }
+    dl, ol, ul {
+        margin-top: 0.1rem;
+        margin-bottom: 0.5rem;
+    }
+    .footer__iconos__lista__listado i{
+        font-size: 3.2vh;
+    }
+    .copy{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {  
+    .logo {
+        height: 2.4rem;
+    }  
+    .cabecera h1 {
+        font-size: 2rem; 
+    }
+    .tituloMarea h1 {
+        width: calc(100% - 2.4rem);
+    }
+    .navbar-toggler{
+        font-size: .5rem;
+        
+    }
+}
+/***** FIN MEDIA QUERY HEADER Y FOOTER *****/
