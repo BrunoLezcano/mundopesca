@@ -147,14 +147,13 @@ header {
   display: flex;
   flex-direction: column;
   color: #f0ebeb; }
-
-.nuestra-pesca__salida img {
-  width: auto;
-  height: 18rem;
-  border: .1rem solid #023047;
-  border-radius: .3rem;
-  box-sizing: border-box;
-  margin-bottom: 1rem; }
+  .nuestra-pesca__salida img {
+    width: auto;
+    height: 18rem;
+    border: .1rem solid #023047;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem; }
 
 .normas {
   display: flex;
@@ -171,7 +170,7 @@ header {
     line-height: 3rem;
     align-self: center;
     margin-right: 1rem;
-    min-width: 12rem;
+    min-width: 7rem;
     text-decoration: none;
     font-size: 1.1rem;
     transition: all .8s; }
@@ -200,6 +199,7 @@ header {
       border-radius: 1.4rem;
       text-align: center;
       line-height: 3rem;
+      align-self: center;
       align-content: space-around;
       min-width: 7rem;
       font-size: 1.1rem;
@@ -257,10 +257,9 @@ header {
       height: auto; }
   .normas {
     flex-direction: column;
-    justify-content: center;
-    padding-bottom: 0rem; }
+    justify-content: center; }
     .normas__texto {
-      max-width: 90%; }
+      max-width: 95%; }
       .normas__texto h4 {
         font-size: 1.3rem;
         padding-bottom: .5rem;
@@ -268,14 +267,13 @@ header {
     .normas__texto p {
       max-width: 100%;
       font-size: .8rem; }
-    .normas__a {
+    .normas__a a {
       margin: 0 auto;
       min-width: 7rem; }
   .permisos {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 24rem; }
+    align-items: center; }
     .permisos__solicitud {
       padding-bottom: 1rem; }
       .permisos__solicitud a {
@@ -292,22 +290,7 @@ header {
   .nuestra-pesca {
     flex-direction: column;
     padding-left: .3rem; }
-  .normas {
-    padding-top: 1rem; }
-    .normas a {
-      width: auto;
-      height: 2rem;
-      line-height: 2rem;
-      align-self: center;
-      margin: 0 auto;
-      text-decoration: none;
-      font-size: 1rem; }
-  .permisos {
-    height: auto;
-    padding-top: .3rem; }
-    .permisos__solicitud {
-      height: 6rem; }
-  .permisos__solicitud a {
+  .normas__a a {
     width: auto;
     height: 2rem;
     line-height: 2rem;
@@ -315,5 +298,22 @@ header {
     margin: 0 auto;
     text-decoration: none;
     font-size: 1rem; }
-  .permisos iframe {
-    width: auto; } }
+  .permisos {
+    height: auto;
+    padding-top: .3rem; }
+    .permisos__solicitud {
+      height: 6rem; }
+      .permisos__solicitud a {
+        width: auto;
+        height: 2rem;
+        line-height: 2rem;
+        align-self: center;
+        margin: 0 auto;
+        text-decoration: none;
+        font-size: 1rem; }
+    .permisos iframe {
+      width: auto; } }
+
+@media screen and (max-width: 400px) {
+  .cabecera h1 {
+    font-size: 2rem; } }
