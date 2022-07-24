@@ -267,9 +267,11 @@ header {
     .normas__texto p {
       max-width: 100%;
       font-size: .8rem; }
-    .normas__a a {
-      margin: 0 auto;
-      min-width: 7rem; }
+    .normas__a {
+      margin-right: 0; }
+      .normas__a a {
+        margin: 0 auto;
+        min-width: 7rem; }
   .permisos {
     flex-direction: column;
     justify-content: center;
@@ -290,14 +292,14 @@ header {
   .nuestra-pesca {
     flex-direction: column;
     padding-left: .3rem; }
-  .normas__a a {
+  .normas__a {
     width: auto;
     height: 2rem;
     line-height: 2rem;
     align-self: center;
-    margin: 0 auto;
     text-decoration: none;
-    font-size: 1rem; }
+    font-size: 1rem;
+    margin-right: 0; }
   .permisos {
     height: auto;
     padding-top: .3rem; }
