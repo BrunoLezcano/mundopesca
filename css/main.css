@@ -1,3 +1,29 @@
+/*EXTENDS */
+.normas__a, .permisos__solicitud a {
+  width: 12rem;
+  height: 3rem;
+  border: .15rem solid #023047;
+  background-color: #e99f17;
+  border-radius: 1.4rem;
+  text-align: center;
+  line-height: 3rem;
+  align-self: center;
+  min-width: 7rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all .7s; }
+  @media screen and (max-width: 500px) {
+    .normas__a, .permisos__solicitud a {
+      width: 7rem;
+      height: 2rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+
+.ubicacion__local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -139,6 +165,33 @@ header {
     font-size: .5rem; } }
 
 /***** FIN MEDIA QUERY HEADER Y FOOTER *****/
+/*EXTENDS */
+.normas__a, .permisos__solicitud a {
+  width: 12rem;
+  height: 3rem;
+  border: .15rem solid #023047;
+  background-color: #e99f17;
+  border-radius: 1.4rem;
+  text-align: center;
+  line-height: 3rem;
+  align-self: center;
+  min-width: 7rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all .7s; }
+  @media screen and (max-width: 500px) {
+    .normas__a, .permisos__solicitud a {
+      width: 7rem;
+      height: 2rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+
+.ubicacion__local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* COMIENZO CSS INDEX */
 .row {
   justify-content: space-around;
   background-color: #1083a0; }
@@ -161,23 +214,13 @@ header {
   .normas__texto {
     max-width: 70%; }
   .normas__a {
-    width: 12rem;
-    height: 3rem;
-    border: #023047 .15rem solid;
-    background-color: #e99f17;
-    border-radius: 1.4rem;
-    text-align: center;
-    line-height: 3rem;
-    align-self: center;
-    margin-right: 1rem;
-    min-width: 7rem;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all .8s; }
+    margin-right: 1rem; }
     .normas__a:hover {
       background-color: #eaee1a;
       color: #050505;
       transform: scale(1.1); }
+    .normas__a a {
+      text-decoration: none; }
 
 .permisos {
   display: flex;
@@ -192,19 +235,7 @@ header {
     flex-direction: column;
     justify-content: space-around; }
     .permisos__solicitud a {
-      width: 12rem;
-      height: 3rem;
-      border: .15rem solid #023047;
-      background-color: #e99f17;
-      border-radius: 1.4rem;
-      text-align: center;
-      line-height: 3rem;
-      align-self: center;
-      align-content: space-around;
-      min-width: 7rem;
-      font-size: 1.1rem;
-      text-decoration: none;
-      transition: all .7s; }
+      align-content: space-around; }
       .permisos__solicitud a:hover {
         background-color: #eaee1a;
         color: #050505;
@@ -245,9 +276,9 @@ header {
 /* INICIO MEDIA QUERY INDEX*/
 @media screen and (max-width: 768px) {
   .presentacion h2 {
-    padding-bottom: .2rem; }
+    padding-bottom: 0.2rem; }
     .presentacion h2 p {
-      padding-left: .2rem; }
+      padding-left: 0.2rem; }
   .nuestra-pesca__salida {
     width: 94%; }
     .nuestra-pesca__salida h3 {
@@ -263,7 +294,7 @@ header {
       .normas__texto h4 {
         font-size: 1.3rem;
         padding-bottom: .5rem;
-        padding-left: .2rem; }
+        padding-left: 0.2rem; }
     .normas__texto p {
       max-width: 100%;
       font-size: .8rem; }
@@ -271,7 +302,7 @@ header {
       margin-right: 0; }
       .normas__a a {
         margin: 0 auto;
-        min-width: 7rem; }
+        width: 7rem; }
   .permisos {
     flex-direction: column;
     justify-content: center;
@@ -291,7 +322,7 @@ header {
     font-size: 2.5rem; }
   .nuestra-pesca {
     flex-direction: column;
-    padding-left: .3rem; }
+    padding-left: 0.2rem; }
   .normas__a {
     width: auto;
     height: 2rem;
@@ -319,3 +350,216 @@ header {
 @media screen and (max-width: 400px) {
   .cabecera h1 {
     font-size: 2rem; } }
+
+/* FIN CSS INDEX */
+/*EXTENDS */
+.normas__a, .permisos__solicitud a {
+  width: 12rem;
+  height: 3rem;
+  border: .15rem solid #023047;
+  background-color: #e99f17;
+  border-radius: 1.4rem;
+  text-align: center;
+  line-height: 3rem;
+  align-self: center;
+  min-width: 7rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all .7s; }
+  @media screen and (max-width: 500px) {
+    .normas__a, .permisos__solicitud a {
+      width: 7rem;
+      height: 2rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+
+.ubicacion__local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* COMIENZO CSS QUIENES */
+.grid-quienes {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 'nosotros' 'vista' 'ubicacion'; }
+
+.nosotros {
+  grid-area: nosotros;
+  padding-left: 0.2rem; }
+  .nosotros h3 {
+    color: #f0ebeb; }
+  .nosotros span {
+    color: #f0ebeb; }
+
+.vista {
+  grid-area: vista;
+  background-color: #1083a0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: .7rem 0; }
+
+.img-fluid {
+  max-width: 32%;
+  height: auto;
+  border: .1rem solid #e99f17;
+  border-radius: .2rem;
+  box-sizing: border-box;
+  transition: all .5s; }
+  .img-fluid:hover {
+    transform: scale(1.12);
+    border: .2rem solid #080807;
+    box-sizing: border-box; }
+
+.ubicacion {
+  grid-area: ubicacion;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: .8rem; }
+  .ubicacion__local {
+    color: #f0ebeb; }
+  .ubicacion iframe {
+    border: 2px solid #023047;
+    border-radius: .3rem; }
+
+/* INICIO MEDIA QUERY QUIENES SOMOS*/
+@media screen and (max-width: 768px) {
+  .vista {
+    flex-direction: column;
+    align-items: center; }
+    .vista img {
+      max-width: none;
+      width: 90%; }
+  .ubicacion {
+    flex-direction: column;
+    padding-top: 1rem; }
+    .ubicacion iframe {
+      width: 80%;
+      padding-top: .8rem;
+      margin: 0 auto; }
+    .ubicacion__local h4 {
+      font-size: 1.2rem;
+      text-align: center; }
+    .ubicacion__local p {
+      text-align: center; } }
+
+/* FIN CSS QUIENES SOMOS*/
+/*EXTENDS */
+.normas__a, .permisos__solicitud a {
+  width: 12rem;
+  height: 3rem;
+  border: .15rem solid #023047;
+  background-color: #e99f17;
+  border-radius: 1.4rem;
+  text-align: center;
+  line-height: 3rem;
+  align-self: center;
+  min-width: 7rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all .7s; }
+  @media screen and (max-width: 500px) {
+    .normas__a, .permisos__solicitud a {
+      width: 7rem;
+      height: 2rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+
+.ubicacion__local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* COMIENZO CSS TIENDAS */
+.main-grid-tienda {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 'equipo' 'secciones' 'cursos'; }
+
+.equipo {
+  grid-area: equipo;
+  display: flex;
+  flex-direction: column; }
+  .equipo h2 {
+    font-size: 1.3rem;
+    padding: 1.2rem 0rem 1.2rem .2rem;
+    color: #f0ebeb; }
+  .equipo__lista ul {
+    display: flex;
+    height: auto;
+    justify-content: space-evenly; }
+    .equipo__lista ul li {
+      width: 8rem;
+      height: 2rem;
+      border: 2px solid #023047;
+      border-radius: .4rem;
+      background-color: #e99f17;
+      text-align: center;
+      list-style: none;
+      height: 2rem;
+      transition: all .7s; }
+      .equipo__lista ul li a {
+        text-decoration: none;
+        color: #050505;
+        font-size: 1rem;
+        align-content: center; }
+      .equipo__lista ul li:hover {
+        background-color: #d4d803;
+        transform: scale(1.2); }
+
+.secciones {
+  grid-area: secciones;
+  display: flex;
+  flex-direction: column;
+  padding: .8rem 0rem; }
+  .secciones__producto {
+    border-top: 1px solid #050505;
+    padding-bottom: 1rem; }
+
+.tarjetas-reel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.card {
+  background-color: #589e9e;
+  margin-top: .5rem; }
+  .card-img-top {
+    height: 15rem; }
+  .card-body h5 {
+    color: #0c0c0c; }
+  .card-body p {
+    color: #0c0c0c; }
+
+.btn-primary {
+  color: #0c0c0c;
+  background-color: #e99f17;
+  border-color: #0c0c0c; }
+
+.cursos {
+  background-color: #1083a0;
+  padding-left: 0.2rem; }
+  .cursos span {
+    color: #f0ebeb; }
+
+/* INICIO MEDIA QUERY TIENDA*/
+@media screen and (max-width: 550px) {
+  .equipo__lista ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10rem; }
+    .equipo__lista ul li {
+      width: 8rem;
+      height: 2rem;
+      padding-bottom: 1rem; } }
+
+@media screen and (max-width: 320px) {
+  .secciones__producto h3 {
+    font-size: 1.3rem;
+    color: #f0ebeb; } }
+
+/* FIN CSS TIENDAS */

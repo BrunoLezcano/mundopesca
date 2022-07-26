@@ -1,0 +1,82 @@
+@import "variables";
+/* COMIENZO CSS QUIENES */
+.grid-quienes {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 'nosotros' 'vista' 'ubicacion';
+}
+.nosotros {
+    grid-area: nosotros;
+    padding-left: $si-padd; 
+    h3 {
+        color: $color-texto-llama;
+    } 
+    span{
+        color: $color-texto-llama;
+    }
+}
+.vista {
+    grid-area: vista;
+    background-color: $color-secciones;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: .7rem 0;
+}
+.img-fluid{
+    max-width: 32%;
+    height: auto;
+    border: .1rem solid #e99f17;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    transition: all .5s;
+    &:hover{
+        transform: scale(1.12);
+        border: .2rem solid #080807;
+        box-sizing: border-box;
+    }
+}
+.ubicacion {
+    grid-area: ubicacion;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: .8rem;
+    &__local{
+        @extend %colcent;
+        color: $color-texto-llama;
+    }
+    iframe {
+        border: 2px solid #023047;
+        border-radius: .3rem;
+    }
+}
+/* INICIO MEDIA QUERY QUIENES SOMOS*/
+@media screen and (max-width: 768px) {
+    .vista {
+        flex-direction: column;
+        align-items: center;
+        img {
+            max-width: none;
+            width: 90%;
+        }
+    }
+    .ubicacion {
+        flex-direction: column;
+        padding-top: 1rem;
+        iframe {
+            width: 80%;
+            padding-top: .8rem;
+            margin: 0 auto;
+        }
+        &__local{
+            h4 {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+/* FIN CSS QUIENES SOMOS*/

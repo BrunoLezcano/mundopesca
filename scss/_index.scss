@@ -1,3 +1,5 @@
+@import "variables";
+/* COMIENZO CSS INDEX */
 .row{
     justify-content: space-around;
     background-color: $color-secciones;
@@ -24,23 +26,15 @@
         max-width: 70%;
     }
     &__a{
-        width: 12rem;
-        height: 3rem;
-        border: #023047 .15rem solid;
-        background-color: #e99f17;
-        border-radius: 1.4rem;
-        text-align: center;
-        line-height: 3rem;
-        align-self: center;
+        @extend %boton;
         margin-right: 1rem;
-        min-width: 7rem;
-        text-decoration: none;
-        font-size: 1.1rem;
-        transition: all .8s;
         &:hover{
             background-color: #eaee1a;
             color: #050505;
             transform: scale(1.1);
+        }
+        a{
+            text-decoration: none;
         }
     }  
 }
@@ -59,19 +53,8 @@
         flex-direction: column;
         justify-content: space-around;
         & a{
-            width: 12rem;
-            height: 3rem;
-            border: .15rem solid #023047;
-            background-color: #e99f17;
-            border-radius: 1.4rem;
-            text-align: center;
-            line-height: 3rem;
-            align-self: center;
+            @extend %boton;
             align-content: space-around;
-            min-width: 7rem;
-            font-size: 1.1rem;
-            text-decoration: none;
-            transition: all .7s;
             &:hover{
                 background-color: #eaee1a;
                 color: #050505;
@@ -118,19 +101,21 @@
 }
 /* INICIO MEDIA QUERY INDEX*/
 @media screen and (max-width: 768px) {
-    .presentacion h2 {
-        padding-bottom: .2rem;
-        & p{
-            padding-left: .2rem;
+    .presentacion {
+        h2 {
+            padding-bottom: $si-padd;
+            p{
+                padding-left: $si-padd;
+            }
         }
     }
     .nuestra-pesca__salida {
         width: 94%;
-        & h3{
+        h3{
             font-size: 1.2rem;
             padding-top: .5rem;
         }
-        & img{
+        img{
             height: auto;
         }
     }
@@ -139,10 +124,10 @@
         justify-content: center;
         &__texto{
             max-width: 95%;
-            & h4{
+            h4{
                 font-size: 1.3rem;
                 padding-bottom: .5rem;
-                padding-left: .2rem;
+                padding-left: $si-padd;
             }
         }
         &__texto p{
@@ -153,7 +138,7 @@
             margin-right: 0;
             a{
                 margin: 0 auto;
-                min-width: 7rem;
+                width: 7rem;
             }
         }
     }
@@ -164,7 +149,7 @@
        
         &__solicitud{
             padding-bottom: 1rem;
-            & a{
+                a{
                 align-content: space-between;
                 margin-top: 3rem;
             }
@@ -183,7 +168,7 @@
     }
     .nuestra-pesca {
         flex-direction: column;
-        padding-left: .3rem;
+        padding-left: $si-padd;
     }
     .normas__a {   
         width: auto;
@@ -219,3 +204,4 @@
         font-size: 2rem;
     }
 }
+/* FIN CSS INDEX */

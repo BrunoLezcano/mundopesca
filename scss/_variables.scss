@@ -4,3 +4,39 @@ $color-headernav : linear-gradient(to top, #e99f17,#eaee1a );
 $color-texto-llama : rgb(240, 235, 235);
 $color-agua-titu: #1bbad6;
 $si-padd : .2rem;
+
+$tarjetas:(
+    "col-borde":#0c0c0c,
+    "col-cuerpo": #589e9e,
+    "col-cuerpo-tit-font": #0c0c0c,
+    "col-cuerpo-tex-font": #0c0c0c,
+    "col-boton":#e99f17,
+    "col-boton-font":#0c0c0c,
+);
+
+/*EXTENDS */
+%boton{
+    width: 12rem;
+    height: 3rem;
+    border:  .15rem solid #023047;
+    background-color: #e99f17;
+    border-radius: 1.4rem;
+    text-align: center;
+    line-height: 3rem;
+    align-self: center;
+    min-width: 7rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all .7s;
+    @media screen and (max-width: 500px) {
+        width: 7rem;
+        height: 2rem;
+        padding-bottom: 1rem;
+        line-height: 2rem;
+    } 
+}
+%colcent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
