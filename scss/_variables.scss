@@ -1,10 +1,14 @@
 $color-body: #35879b;
 $color-secciones: rgb(16, 131, 160);
+$color-principal:#e99f17;
 $color-headernav : linear-gradient(to top, #e99f17,#eaee1a );
 $color-texto-llama : rgb(240, 235, 235);
 $color-agua-titu: #1bbad6;
 $si-padd : .2rem;
+$col-grilla-base:#d6d2d2;
+$col-grilla-font:#000000;
 
+/*MAPS*/
 $tarjetas:(
     "col-borde":#0c0c0c,
     "col-cuerpo": #589e9e,
@@ -14,7 +18,7 @@ $tarjetas:(
     "col-boton-font":#0c0c0c,
 );
 
-/*EXTENDS */
+/*EXTENDS*/
 %boton{
     width: 12rem;
     height: 3rem;
@@ -39,4 +43,20 @@ $tarjetas:(
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/*MIXINS*/
+@mixin formulario ($col-grilla,$colo-font,$col-boton) {
+    .input-group{
+        width: 60vh;
+        padding: .5rem 0;
+        &-text{
+            width: 5rem;
+            background-color: $col-grilla;
+            color: $colo-font;
+        } 
+        & .btn-primary{
+            background-color: $col-boton;
+            }
+    }
 }

@@ -1,0 +1,98 @@
+@import "variables";
+/* COMIENZO CSS EXCURSIONES */
+.locaciones {
+    background-color: rgb(16, 131, 160);
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        li {
+            list-style: none;
+            :hover{
+                color: #eebc18;
+            }
+            a {
+                text-decoration: none;
+                transition: all .5s;
+                color: #eceaea;
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.galeria-locaciones{
+    display: flex;
+    flex-direction: column;
+    &__fotos{
+        display: grid;
+        width: 95%;
+        margin: auto;
+        grid-template-columns: repeat(auto-fit,minmax(20rem,auto));
+        grid-auto-rows: minmax(13rem,auto);
+        gap: .15rem;
+        img {
+            width: 100%;
+            height: 100%;
+            min-width: 11rem;
+            border: .08rem solid rgb(153, 126, 51);
+        }
+    }
+}
+.formulario {
+    border-top:.1rem solid $color-principal;
+    margin-right: .2rem;
+    h3 {
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+        padding-left: $si-padd; 
+    }
+    .form-select{
+        width: 45vh;
+    }
+    &__datos{
+        background-color: $color-secciones;
+        @include formulario($col-grilla-base,$col-grilla-font,$color-principal)
+    }
+}
+/* INICIO MEDIA QUERY EXCURSIONES*/
+@media screen and (max-width: 600px) {
+    .locaciones {
+        h4{
+            font-size: 1rem;
+        }
+        ul {
+            flex-direction: column;
+            align-items: center;
+            li{
+                padding-bottom: .5rem; 
+            }
+        }
+    }
+    .galeria-locaciones__fotos{
+        grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+
+    }
+}
+@media screen and (max-width: 500px) {
+    .formulario {
+        & .form-select{
+            width: 35vh;
+        }
+        &__datos{  
+            & .input-group {
+                width: 35vh;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 400px) {
+    .locaciones {
+        h4{
+            font-size: .8rem;
+        }
+    }
+}
+/* FIN CSS EXCURSIONES */

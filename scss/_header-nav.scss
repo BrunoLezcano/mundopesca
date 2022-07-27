@@ -39,7 +39,7 @@ header {
 }
 .tituloB {
     color: $color-agua-titu;
-    animation: ola 3s ease-in-out infinite;
+    animation: ola 2.8s ease-in-out infinite;
 }
 @keyframes ola {
     0%,
@@ -47,7 +47,7 @@ header {
         clip-path: polygon( 0% 48%, 10% 52%,20% 58%, 33% 55%, 54% 55%, 70% 60%, 84% 55%, 100% 66%, 100% 100%, 0% 100%);
     }
     50% {
-        clip-path: polygon( 0% 45%, 10% 55%,20% 53%, 33% 68%, 54% 70%, 70% 60%, 84% 45%, 100% 50%, 100% 100%, 0% 100%);
+        clip-path: polygon( 0% 40%, 10% 55%,20% 53%, 33% 58%, 54% 60%, 70% 64%, 84% 50%, 100% 50%, 100% 100%, 0% 100%);
     }
 }
 .footer {

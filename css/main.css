@@ -1,4 +1,5 @@
-/*EXTENDS */
+/*MAPS*/
+/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -24,6 +25,7 @@
   flex-direction: column;
   justify-content: center; }
 
+/*MIXINS*/
 * {
   margin: 0;
   padding: 0;
@@ -74,14 +76,14 @@ header {
 
 .tituloB {
   color: #1bbad6;
-  animation: ola 3s ease-in-out infinite; }
+  animation: ola 2.8s ease-in-out infinite; }
 
 @keyframes ola {
   0%,
   100% {
     clip-path: polygon(0% 48%, 10% 52%, 20% 58%, 33% 55%, 54% 55%, 70% 60%, 84% 55%, 100% 66%, 100% 100%, 0% 100%); }
   50% {
-    clip-path: polygon(0% 45%, 10% 55%, 20% 53%, 33% 68%, 54% 70%, 70% 60%, 84% 45%, 100% 50%, 100% 100%, 0% 100%); } }
+    clip-path: polygon(0% 40%, 10% 55%, 20% 53%, 33% 58%, 54% 60%, 70% 64%, 84% 50%, 100% 50%, 100% 100%, 0% 100%); } }
 
 .footer {
   height: 12vh;
@@ -165,7 +167,8 @@ header {
     font-size: .5rem; } }
 
 /***** FIN MEDIA QUERY HEADER Y FOOTER *****/
-/*EXTENDS */
+/*MAPS*/
+/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -191,6 +194,7 @@ header {
   flex-direction: column;
   justify-content: center; }
 
+/*MIXINS*/
 /* COMIENZO CSS INDEX */
 .row {
   justify-content: space-around;
@@ -352,7 +356,8 @@ header {
     font-size: 2rem; } }
 
 /* FIN CSS INDEX */
-/*EXTENDS */
+/*MAPS*/
+/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -378,6 +383,7 @@ header {
   flex-direction: column;
   justify-content: center; }
 
+/*MIXINS*/
 /* COMIENZO CSS QUIENES */
 .grid-quienes {
   display: grid;
@@ -445,7 +451,8 @@ header {
       text-align: center; } }
 
 /* FIN CSS QUIENES SOMOS*/
-/*EXTENDS */
+/*MAPS*/
+/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -471,6 +478,7 @@ header {
   flex-direction: column;
   justify-content: center; }
 
+/*MIXINS*/
 /* COMIENZO CSS TIENDAS */
 .main-grid-tienda {
   width: 100%;
@@ -563,3 +571,135 @@ header {
     color: #f0ebeb; } }
 
 /* FIN CSS TIENDAS */
+/*MAPS*/
+/*EXTENDS*/
+.normas__a, .permisos__solicitud a {
+  width: 12rem;
+  height: 3rem;
+  border: .15rem solid #023047;
+  background-color: #e99f17;
+  border-radius: 1.4rem;
+  text-align: center;
+  line-height: 3rem;
+  align-self: center;
+  min-width: 7rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all .7s; }
+  @media screen and (max-width: 500px) {
+    .normas__a, .permisos__solicitud a {
+      width: 7rem;
+      height: 2rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+
+.ubicacion__local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/*MIXINS*/
+/* COMIENZO CSS EXCURSIONES */
+.locaciones {
+  background-color: #1083a0; }
+  .locaciones ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .locaciones ul li {
+      list-style: none; }
+      .locaciones ul li :hover {
+        color: #eebc18; }
+      .locaciones ul li a {
+        text-decoration: none;
+        transition: all .5s;
+        color: #eceaea; }
+      .locaciones ul li:hover {
+        transform: scale(1.1); }
+
+.galeria-locaciones {
+  display: flex;
+  flex-direction: column; }
+  .galeria-locaciones__fotos {
+    display: grid;
+    width: 95%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+    grid-auto-rows: minmax(13rem, auto);
+    gap: .15rem; }
+    .galeria-locaciones__fotos img {
+      width: 100%;
+      height: 100%;
+      min-width: 11rem;
+      border: 0.08rem solid #997e33; }
+
+.formulario {
+  border-top: 0.1rem solid #e99f17;
+  margin-right: .2rem; }
+  .formulario h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 0.2rem; }
+  .formulario .form-select {
+    width: 45vh; }
+  .formulario__datos {
+    background-color: #1083a0; }
+    .formulario__datos .input-group {
+      width: 60vh;
+      padding: .5rem 0; }
+      .formulario__datos .input-group-text {
+        width: 5rem;
+        background-color: #d6d2d2;
+        color: #000000; }
+      .formulario__datos .input-group .btn-primary {
+        background-color: #e99f17; }
+
+/* INICIO MEDIA QUERY EXCURSIONES*/
+@media screen and (max-width: 600px) {
+  .locaciones h4 {
+    font-size: 1rem; }
+  .locaciones ul {
+    flex-direction: column;
+    align-items: center; }
+    .locaciones ul li {
+      padding-bottom: .5rem; }
+  .galeria-locaciones__fotos {
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto)); } }
+
+@media screen and (max-width: 500px) {
+  .formulario .form-select {
+    width: 35vh; }
+  .formulario__datos .input-group {
+    width: 35vh; } }
+
+@media screen and (max-width: 400px) {
+  .locaciones h4 {
+    font-size: .8rem; } }
+
+/* FIN CSS EXCURSIONES */
+.main-grid-contacto {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 'contacto' 'comentarios' 'pie';
+  grid-template-rows: auto auto auto; }
+
+.contacto {
+  grid-area: contacto;
+  background-image: url(../img/fondo-contacto2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto; }
+
+.comentarios {
+  grid-area: comentarios;
+  padding-top: 1rem; }
+
+footer {
+  grid-area: pie; }

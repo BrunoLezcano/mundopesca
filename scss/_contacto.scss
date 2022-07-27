@@ -1,0 +1,28 @@
+.main-grid-contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 'contacto' 'comentarios' 'pie';
+    grid-template-rows: auto auto auto;
+}
+.contacto {
+    grid-area: contacto;
+    background-image: url(../img/fondo-contacto2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.comentarios {
+    grid-area: comentarios;
+    padding-top: 1rem;
+}
+
+footer {
+    grid-area: pie;
+}
