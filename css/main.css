@@ -25,6 +25,23 @@
   flex-direction: column;
   justify-content: center; }
 
+.cabecera h1, .cabecera h2 {
+  background-image: linear-gradient(to top, #e99f17, #eaee1a);
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  font-family: 'Pirata One', cursive; }
+  @media screen and (max-width: 650px) {
+    .cabecera h1, .cabecera h2 {
+      text-align: start;
+      padding-left: .3rem; } }
+  @media screen and (max-width: 500px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 400px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2rem; } }
+
 /*MIXINS*/
 * {
   margin: 0;
@@ -35,6 +52,51 @@ main {
   background-color: #35879b;
   padding-left: .2rem; }
 
+/*MAPS*/
+/*EXTENDS*/
+.normas__a, .permisos__solicitud a {
+  width: 12rem;
+  height: 3rem;
+  border: .15rem solid #023047;
+  background-color: #e99f17;
+  border-radius: 1.4rem;
+  text-align: center;
+  line-height: 3rem;
+  align-self: center;
+  min-width: 7rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all .7s; }
+  @media screen and (max-width: 500px) {
+    .normas__a, .permisos__solicitud a {
+      width: 7rem;
+      height: 2rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+
+.ubicacion__local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.cabecera h1, .cabecera h2 {
+  background-image: linear-gradient(to top, #e99f17, #eaee1a);
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  font-family: 'Pirata One', cursive; }
+  @media screen and (max-width: 650px) {
+    .cabecera h1, .cabecera h2 {
+      text-align: start;
+      padding-left: .3rem; } }
+  @media screen and (max-width: 500px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 400px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2rem; } }
+
+/*MIXINS*/
 /* header y nav*/
 header {
   background-color: #35879b;
@@ -49,13 +111,6 @@ header {
   box-sizing: border-box;
   height: 4.9rem; }
 
-.cabecera h1 {
-  background-image: linear-gradient(to top, #e99f17, #eaee1a);
-  font-size: 4rem;
-  text-align: center;
-  letter-spacing: .3rem;
-  font-family: 'Pirata One', cursive; }
-
 .navbar-expand-lg .navbar-nav {
   width: 100%;
   justify-content: space-around; }
@@ -67,6 +122,10 @@ header {
   height: 5rem; }
 
 .tituloMarea h1 {
+  position: absolute;
+  width: calc(100% - 4.9rem); }
+
+.tituloMarea h2 {
   position: absolute;
   width: calc(100% - 4.9rem); }
 
@@ -140,10 +199,6 @@ header {
 @media screen and (max-width: 500px) {
   .logo {
     height: 3rem; }
-  .cabecera h1 {
-    font-size: 2.5rem;
-    text-align: start;
-    padding-left: .3rem; }
   .tituloMarea h1 {
     width: calc(100% - 3rem); }
   .navbar {
@@ -159,8 +214,6 @@ header {
 @media screen and (max-width: 400px) {
   .logo {
     height: 2.4rem; }
-  .cabecera h1 {
-    font-size: 2rem; }
   .tituloMarea h1 {
     width: calc(100% - 2.4rem); }
   .navbar-toggler {
@@ -193,6 +246,23 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+.cabecera h1, .cabecera h2 {
+  background-image: linear-gradient(to top, #e99f17, #eaee1a);
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  font-family: 'Pirata One', cursive; }
+  @media screen and (max-width: 650px) {
+    .cabecera h1, .cabecera h2 {
+      text-align: start;
+      padding-left: .3rem; } }
+  @media screen and (max-width: 500px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 400px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2rem; } }
 
 /*MIXINS*/
 /* COMIENZO CSS INDEX */
@@ -383,6 +453,23 @@ header {
   flex-direction: column;
   justify-content: center; }
 
+.cabecera h1, .cabecera h2 {
+  background-image: linear-gradient(to top, #e99f17, #eaee1a);
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  font-family: 'Pirata One', cursive; }
+  @media screen and (max-width: 650px) {
+    .cabecera h1, .cabecera h2 {
+      text-align: start;
+      padding-left: .3rem; } }
+  @media screen and (max-width: 500px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 400px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2rem; } }
+
 /*MIXINS*/
 /* COMIENZO CSS QUIENES */
 .grid-quienes {
@@ -414,7 +501,7 @@ header {
   box-sizing: border-box;
   transition: all .5s; }
   .img-fluid:hover {
-    transform: scale(1.12);
+    transform: scale(1.04);
     border: .2rem solid #080807;
     box-sizing: border-box; }
 
@@ -437,6 +524,10 @@ header {
     .vista img {
       max-width: none;
       width: 90%; }
+  .img-fluid:hover {
+    transform: none;
+    transform: none;
+    border: .1rem solid #e99f17; }
   .ubicacion {
     flex-direction: column;
     padding-top: 1rem; }
@@ -477,6 +568,23 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+.cabecera h1, .cabecera h2 {
+  background-image: linear-gradient(to top, #e99f17, #eaee1a);
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  font-family: 'Pirata One', cursive; }
+  @media screen and (max-width: 650px) {
+    .cabecera h1, .cabecera h2 {
+      text-align: start;
+      padding-left: .3rem; } }
+  @media screen and (max-width: 500px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 400px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2rem; } }
 
 /*MIXINS*/
 /* COMIENZO CSS TIENDAS */
@@ -597,6 +705,23 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+.cabecera h1, .cabecera h2 {
+  background-image: linear-gradient(to top, #e99f17, #eaee1a);
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  font-family: 'Pirata One', cursive; }
+  @media screen and (max-width: 650px) {
+    .cabecera h1, .cabecera h2 {
+      text-align: start;
+      padding-left: .3rem; } }
+  @media screen and (max-width: 500px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 400px) {
+    .cabecera h1, .cabecera h2 {
+      font-size: 2rem; } }
 
 /*MIXINS*/
 /* COMIENZO CSS EXCURSIONES */

@@ -1,3 +1,4 @@
+@import "variables";
 /* header y nav*/
 header {
     background-color: $color-body;
@@ -12,12 +13,13 @@ header {
     box-sizing: border-box;
     height: 4.9rem;
 }
-.cabecera h1 {
-    background-image: $color-headernav;
-    font-size: 4rem;
-    text-align: center;
-    letter-spacing: .3rem;
-    font-family: 'Pirata One', cursive;
+.cabecera {
+    h1 {
+        @extend %cabecera;
+    }
+    h2 {
+        @extend %cabecera;
+    }
 }
 .navbar-expand-lg .navbar-nav {
     width: 100%;
@@ -30,6 +32,10 @@ header {
     height: 5rem;
 }
 .tituloMarea h1 {
+    position: absolute;
+    width: calc(100% - 4.9rem);
+}
+.tituloMarea h2 {
     position: absolute;
     width: calc(100% - 4.9rem);
 }
@@ -79,7 +85,6 @@ header {
         color: #050505; 
     }
 }
-
 /***** INICIO MEDIA QUERY HEADER Y FOOTER *****/
 @media screen and (max-width: 991px) { 
     header {
@@ -122,11 +127,6 @@ header {
     .logo {
         height: 3rem;
     }
-    .cabecera h1 {
-        font-size: 2.5rem;
-        text-align:start; 
-        padding-left: .3rem; 
-    }
     .tituloMarea h1 {
         width: calc(100% - 3rem);
     }
@@ -147,16 +147,12 @@ header {
 @media screen and (max-width: 400px) {  
     .logo {
         height: 2.4rem;
-    }  
-    .cabecera h1 {
-        font-size: 2rem; 
     }
     .tituloMarea h1 {
         width: calc(100% - 2.4rem);
     }
     .navbar-toggler{
         font-size: .5rem;
-        
     }
 }
 /***** FIN MEDIA QUERY HEADER Y FOOTER *****/

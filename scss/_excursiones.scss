@@ -72,7 +72,6 @@
     }
     .galeria-locaciones__fotos{
         grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
-
     }
 }
 @media screen and (max-width: 500px) {
@@ -84,8 +83,7 @@
             & .input-group {
                 width: 35vh;
             }
-        }
-        
+        } 
     }
 }
 @media screen and (max-width: 400px) {

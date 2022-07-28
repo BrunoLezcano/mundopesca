@@ -44,6 +44,23 @@ $tarjetas:(
     flex-direction: column;
     justify-content: center;
 }
+%cabecera{
+    background-image: $color-headernav;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: .3rem;
+    font-family: 'Pirata One', cursive;
+    @media screen and (max-width: 650px) {
+        text-align:start;
+        padding-left: .3rem; 
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 2.5rem; 
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 2rem;
+    }
+}
 
 /*MIXINS*/
 @mixin formulario ($col-grilla,$colo-font,$col-boton) {
