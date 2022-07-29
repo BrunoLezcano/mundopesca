@@ -1,5 +1,5 @@
 @import "variables";
-/* COMIENZO CSS INDEX */
+
 .row{
     justify-content: space-around;
     background-color: $color-secciones;
@@ -98,7 +98,7 @@
 .imagen4 {
     grid-column: 1/4;
 }
-/* INICIO MEDIA QUERY INDEX*/
+
 @media screen and (max-width: 768px) {
     .presentacion {
         h2 {
@@ -203,4 +203,3 @@
         font-size: 2rem;
     }
 }
-/* FIN CSS INDEX */

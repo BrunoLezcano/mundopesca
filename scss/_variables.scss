@@ -8,7 +8,7 @@ $si-padd : .2rem;
 $col-grilla-base:#d6d2d2;
 $col-grilla-font:#000000;
 
-/*MAPS*/
+
 $tarjetas:(
     "col-borde":#0c0c0c,
     "col-cuerpo": #589e9e,
@@ -18,7 +18,7 @@ $tarjetas:(
     "col-boton-font":#0c0c0c,
 );
 
-/*EXTENDS*/
+
 %boton{
     width: 12rem;
     height: 3rem;
@@ -62,7 +62,7 @@ $tarjetas:(
     }
 }
 
-/*MIXINS*/
+
 @mixin formulario ($col-grilla,$colo-font,$col-boton) {
     .input-group{
         width: 60vh;

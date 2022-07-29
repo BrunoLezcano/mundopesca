@@ -1,5 +1,5 @@
 @import "variables";
-/* COMIENZO CSS TIENDAS */  
+ 
 .main-grid-tienda {
     width: 100%;
     display: grid;
@@ -88,7 +88,7 @@
         color: $color-texto-llama;
     }
 }
-/* INICIO MEDIA QUERY TIENDA*/
+
 @media screen and (max-width: 550px) {
     .equipo__lista {
         ul {

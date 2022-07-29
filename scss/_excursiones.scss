@@ -1,5 +1,5 @@
 @import "variables";
-/* COMIENZO CSS EXCURSIONES */
+
 .locaciones {
     background-color: rgb(16, 131, 160);
     ul {
@@ -56,7 +56,6 @@
         @include formulario($col-grilla-base,$col-grilla-font,$color-principal)
     }
 }
-/* INICIO MEDIA QUERY EXCURSIONES*/
 @media screen and (max-width: 600px) {
     .locaciones {
         h4{
@@ -93,4 +92,3 @@
         }
     }
 }
-/* FIN CSS EXCURSIONES */
