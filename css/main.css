@@ -1,5 +1,3 @@
-/*MAPS*/
-/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -42,18 +40,15 @@
     .cabecera h1, .cabecera h2 {
       font-size: 2rem; } }
 
-/*MIXINS*/
 * {
   margin: 0;
   padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 main {
-  background-color: #35879b;
+  background-color: #3fa1b8;
   padding-left: .2rem; }
 
-/*MAPS*/
-/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -96,10 +91,8 @@ main {
     .cabecera h1, .cabecera h2 {
       font-size: 2rem; } }
 
-/*MIXINS*/
-/* header y nav*/
 header {
-  background-color: #35879b;
+  background-color: #3fa1b8;
   display: flex;
   flex-direction: column; }
 
@@ -167,7 +160,6 @@ header {
     font-size: 4vh;
     color: #050505; }
 
-/***** INICIO MEDIA QUERY HEADER Y FOOTER *****/
 @media screen and (max-width: 991px) {
   header {
     flex-direction: row;
@@ -219,9 +211,6 @@ header {
   .navbar-toggler {
     font-size: .5rem; } }
 
-/***** FIN MEDIA QUERY HEADER Y FOOTER *****/
-/*MAPS*/
-/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -264,8 +253,6 @@ header {
     .cabecera h1, .cabecera h2 {
       font-size: 2rem; } }
 
-/*MIXINS*/
-/* COMIENZO CSS INDEX */
 .row {
   justify-content: space-around;
   background-color: #1083a0; }
@@ -347,7 +334,6 @@ header {
 .imagen4 {
   grid-column: 1/4; }
 
-/* INICIO MEDIA QUERY INDEX*/
 @media screen and (max-width: 768px) {
   .presentacion h2 {
     padding-bottom: 0.2rem; }
@@ -425,9 +411,6 @@ header {
   .cabecera h1 {
     font-size: 2rem; } }
 
-/* FIN CSS INDEX */
-/*MAPS*/
-/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -470,8 +453,6 @@ header {
     .cabecera h1, .cabecera h2 {
       font-size: 2rem; } }
 
-/*MIXINS*/
-/* COMIENZO CSS QUIENES */
 .grid-quienes {
   display: grid;
   grid-template-columns: auto;
@@ -516,7 +497,6 @@ header {
     border: 2px solid #023047;
     border-radius: .3rem; }
 
-/* INICIO MEDIA QUERY QUIENES SOMOS*/
 @media screen and (max-width: 768px) {
   .vista {
     flex-direction: column;
@@ -541,9 +521,6 @@ header {
     .ubicacion__local p {
       text-align: center; } }
 
-/* FIN CSS QUIENES SOMOS*/
-/*MAPS*/
-/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -586,8 +563,6 @@ header {
     .cabecera h1, .cabecera h2 {
       font-size: 2rem; } }
 
-/*MIXINS*/
-/* COMIENZO CSS TIENDAS */
 .main-grid-tienda {
   width: 100%;
   display: grid;
@@ -661,7 +636,6 @@ header {
   .cursos span {
     color: #f0ebeb; }
 
-/* INICIO MEDIA QUERY TIENDA*/
 @media screen and (max-width: 550px) {
   .equipo__lista ul {
     display: flex;
@@ -679,8 +653,6 @@ header {
     color: #f0ebeb; } }
 
 /* FIN CSS TIENDAS */
-/*MAPS*/
-/*EXTENDS*/
 .normas__a, .permisos__solicitud a {
   width: 12rem;
   height: 3rem;
@@ -723,8 +695,6 @@ header {
     .cabecera h1, .cabecera h2 {
       font-size: 2rem; } }
 
-/*MIXINS*/
-/* COMIENZO CSS EXCURSIONES */
 .locaciones {
   background-color: #1083a0; }
   .locaciones ul {
@@ -770,7 +740,7 @@ header {
   .formulario__datos {
     background-color: #1083a0; }
     .formulario__datos .input-group {
-      width: 60vh;
+      width: 70vh;
       padding: .5rem 0; }
       .formulario__datos .input-group-text {
         width: 5rem;
@@ -779,7 +749,6 @@ header {
       .formulario__datos .input-group .btn-primary {
         background-color: #e99f17; }
 
-/* INICIO MEDIA QUERY EXCURSIONES*/
 @media screen and (max-width: 600px) {
   .locaciones h4 {
     font-size: 1rem; }
@@ -795,13 +764,12 @@ header {
   .formulario .form-select {
     width: 35vh; }
   .formulario__datos .input-group {
-    width: 35vh; } }
+    width: 43vh; } }
 
 @media screen and (max-width: 400px) {
   .locaciones h4 {
     font-size: .8rem; } }
 
-/* FIN CSS EXCURSIONES */
 .main-grid-contacto {
   display: grid;
   grid-template-columns: auto;
