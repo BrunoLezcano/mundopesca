@@ -40,9 +40,8 @@
         }
     }
 }
-.formulario {
+.formulario{
     border-top:.1rem solid $color-principal;
-    margin-right: .2rem;
     h3 {
         font-size: 1.2rem;
         padding-bottom: 1.2rem;
@@ -50,10 +49,14 @@
     }
     .form-select{
         width: 45vh;
+        margin: auto;
     }
     &__datos{
         background-color: $color-secciones;
-        @include formulario($col-grilla-base,$col-grilla-font,$color-principal)
+        @include formulario($col-grilla-base,$col-grilla-font,$color-principal);
+        & .input-group{
+            margin: auto;
+        }
     }
 }
 @media screen and (max-width: 600px) {

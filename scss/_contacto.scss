@@ -1,8 +1,10 @@
 .main-grid-contacto {
     display: grid;
+    height: 80%;
     grid-template-columns: auto;
     grid-template-areas: 'contacto' 'comentarios' 'pie';
     grid-template-rows: auto auto auto;
+
 }
 .contacto {
     grid-area: contacto;

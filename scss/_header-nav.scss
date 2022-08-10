@@ -1,7 +1,5 @@
-@import "variables";
-
 header {
-    background-color: $color-body;
+    background:$color-body;
     display: flex;
     flex-direction: column;
 }
@@ -59,6 +57,7 @@ header {
 .footer {
     height: 12vh;
     background-image: $color-headernav;
+    padding: 0 .7rem;
     display: flex;
     justify-content:space-between;
 
@@ -70,6 +69,7 @@ header {
     &__iconos{
         display: flex;
         line-height: 12vh;
+        padding-top: .5rem;
     }
     &__iconos__lista{
         display: flex;

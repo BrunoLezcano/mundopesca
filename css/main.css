@@ -46,53 +46,11 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 main {
-  background-color: #3fa1b8;
-  padding-left: .2rem; }
-
-.normas__a, .permisos__solicitud a {
-  width: 12rem;
-  height: 3rem;
-  border: .15rem solid #023047;
-  background-color: #e99f17;
-  border-radius: 1.4rem;
-  text-align: center;
-  line-height: 3rem;
-  align-self: center;
-  min-width: 7rem;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: all .7s; }
-  @media screen and (max-width: 500px) {
-    .normas__a, .permisos__solicitud a {
-      width: 7rem;
-      height: 2rem;
-      padding-bottom: 1rem;
-      line-height: 2rem; } }
-
-.ubicacion__local {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.cabecera h1, .cabecera h2 {
-  background-image: linear-gradient(to top, #e99f17, #eaee1a);
-  font-size: 4rem;
-  text-align: center;
-  letter-spacing: .3rem;
-  font-family: 'Pirata One', cursive; }
-  @media screen and (max-width: 650px) {
-    .cabecera h1, .cabecera h2 {
-      text-align: start;
-      padding-left: .3rem; } }
-  @media screen and (max-width: 500px) {
-    .cabecera h1, .cabecera h2 {
-      font-size: 2.5rem; } }
-  @media screen and (max-width: 400px) {
-    .cabecera h1, .cabecera h2 {
-      font-size: 2rem; } }
+  background: linear-gradient(to left, #8ab2d3, #298ac2 100%);
+  padding-left: 0.2rem; }
 
 header {
-  background-color: #3fa1b8;
+  background: linear-gradient(to left, #8ab2d3, #298ac2 100%);
   display: flex;
   flex-direction: column; }
 
@@ -140,6 +98,7 @@ header {
 .footer {
   height: 12vh;
   background-image: linear-gradient(to top, #e99f17, #eaee1a);
+  padding: 0 .7rem;
   display: flex;
   justify-content: space-between; }
   .footer__copyright {
@@ -148,7 +107,8 @@ header {
     line-height: 12vh; }
   .footer__iconos {
     display: flex;
-    line-height: 12vh; }
+    line-height: 12vh;
+    padding-top: .5rem; }
   .footer__iconos__lista {
     display: flex;
     align-items: center;
@@ -262,8 +222,8 @@ header {
   flex-direction: column;
   color: #f0ebeb; }
   .nuestra-pesca__salida img {
-    width: auto;
-    height: 18rem;
+    width: 90%;
+    height: 17rem;
     border: .1rem solid #023047;
     border-radius: .3rem;
     box-sizing: border-box;
@@ -632,7 +592,7 @@ header {
 
 .cursos {
   background-color: #1083a0;
-  padding-left: 0.2rem; }
+  padding-left: .7rem; }
   .cursos span {
     color: #f0ebeb; }
 
@@ -729,14 +689,14 @@ header {
       border: 0.08rem solid #997e33; }
 
 .formulario {
-  border-top: 0.1rem solid #e99f17;
-  margin-right: .2rem; }
+  border-top: 0.1rem solid #e99f17; }
   .formulario h3 {
     font-size: 1.2rem;
     padding-bottom: 1.2rem;
     padding-left: 0.2rem; }
   .formulario .form-select {
-    width: 45vh; }
+    width: 45vh;
+    margin: auto; }
   .formulario__datos {
     background-color: #1083a0; }
     .formulario__datos .input-group {
@@ -748,6 +708,8 @@ header {
         color: #000000; }
       .formulario__datos .input-group .btn-primary {
         background-color: #e99f17; }
+    .formulario__datos .input-group {
+      margin: auto; }
 
 @media screen and (max-width: 600px) {
   .locaciones h4 {
@@ -772,6 +734,7 @@ header {
 
 .main-grid-contacto {
   display: grid;
+  height: 80%;
   grid-template-columns: auto;
   grid-template-areas: 'contacto' 'comentarios' 'pie';
   grid-template-rows: auto auto auto; }
