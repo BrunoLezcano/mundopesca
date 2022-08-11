@@ -98,13 +98,9 @@ header {
 .footer {
   height: 12vh;
   background-image: linear-gradient(to top, #e99f17, #eaee1a);
-  padding: 0 .7rem;
+  padding: 0 .2rem;
   display: flex;
   justify-content: space-between; }
-  .footer__copyright {
-    font-size: .8rem;
-    text-align: center;
-    line-height: 12vh; }
   .footer__iconos {
     display: flex;
     line-height: 12vh;
@@ -115,10 +111,18 @@ header {
     justify-content: space-around; }
   .footer__iconos__lista__listado {
     list-style: none;
-    margin-left: 25%; }
+    margin-left: 20%; }
   .footer__iconos__lista__listado i {
     font-size: 4vh;
     color: #050505; }
+  .footer__volver a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #1083a0; }
+  .footer__copyright {
+    font-size: .8rem;
+    text-align: center;
+    line-height: 12vh; }
 
 @media screen and (max-width: 991px) {
   header {
@@ -169,7 +173,9 @@ header {
   .tituloMarea h1 {
     width: calc(100% - 2.4rem); }
   .navbar-toggler {
-    font-size: .5rem; } }
+    font-size: .5rem; }
+  .footer__volver a {
+    font-size: .8rem; } }
 
 .normas__a, .permisos__solicitud a {
   width: 12rem;
